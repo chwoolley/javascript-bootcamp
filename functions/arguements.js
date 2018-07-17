@@ -68,3 +68,13 @@ let getTipThree = function (total, tipPercent =.2) {
     return `A ${percent}% tip on $${total} would be $${tip}`
 }
 
+let  tippo = getTipThree(60);
+console.log(tippo);
+
+// you can run the calculations inside a template string.
+let getTipFour = function (total, tipPercent = .2) {
+    return `A ${tipPercent * 100}% tip on $${total} would be $${total * tipPercent}`
+}
+
+let tippop = getTipFour(75);
+console.log(tippop);
